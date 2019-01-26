@@ -1,0 +1,23 @@
+{
+  "name": "website-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jest": "^23.6.0",
+    "jwt-simple": "^0.5.5",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "supertest": "^3.4.1"
+  }
+}
