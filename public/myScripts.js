@@ -1,7 +1,7 @@
 var loggedIn = ""
 function registerHandler (){
   $.ajax({
-    url:"http://127.0.0.1:3000/people",
+    url:"http://simplicityspawebsite-simplicityspa.1d35.starter-us-east-1.openshiftapps.com/",
     type:"POST",
     headers: {
       "username": $('#unameReg').val(),
@@ -37,7 +37,7 @@ function registerHandler (){
 function loginHandler(){
 
   $.ajax({
-    url:"http://127.0.0.1:3000/login",
+    url:"simplicityspawebsite-simplicityspa.1d35.starter-us-east-1.openshiftapps.com/",
     type:"POST",
     data: JSON.stringify({
       "username": $('#unameLogin').val(),
@@ -67,7 +67,7 @@ function submitReview(){
 
   $.ajax({
     type:"POST",
-    url: "http://127.0.0.1:3000/comments",
+    url: "simplicityspawebsite-simplicityspa.1d35.starter-us-east-1.openshiftapps.com/",
     data: JSON.stringify({
       "username": loggedIn,
       "review": $('#reviewInput').val()
@@ -99,7 +99,7 @@ function loadContent(){
   $.ajax({
 
     type:"GET",
-    url: "http://127.0.0.1:3000/comments",
+    url: "simplicityspawebsite-simplicityspa.1d35.starter-us-east-1.openshiftapps.com/",
     contentType:"application/json; charset=utf-8",
     dataType:"json",
     success: function(data){
