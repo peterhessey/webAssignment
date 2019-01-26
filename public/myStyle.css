@@ -1,0 +1,237 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #21a2d4;
+  color: #FFF;
+  padding: 1% 1%;
+  font-size: 1.2em;
+  border: 0;
+}
+
+a{
+  color:dodgerblue;
+}
+
+.navbar-brand{
+  float: left;
+  min-height: 55px;
+  padding: 0 15px 5px;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus{
+  color: #FFF;
+  background-color: #21a2d4;
+}
+
+.navbar-inverse .navbar-nav .active a:hover {
+  background-color: #AAA;
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: #D5D5D5;
+}
+
+.logo {
+  max-height: 200px;
+}
+
+.item-active, .item{
+  height: 30%;
+}
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption a{
+  color: #FFF;
+}
+
+.btn {
+  font-size: 18px;
+  color: #FFF
+  padding: 12px 22px;
+  background: #21a2d4;
+  border: 2px solid #FFF;
+}
+
+.btn:hover {
+  color: #D5D5D5;
+}
+
+.container {
+  margin: auto;
+}
+
+.therapyLink {
+  text-decoration: none;
+}
+#icon {
+  height: 200px;
+  margin: 1% auto;
+}
+
+#hiddenrow {
+  padding: 1% 1%;
+}
+
+footer {
+  width: 100%;
+  background-color: #21a2d4;
+  padding: 5%;
+  color: #FFF;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  color: #FFF;
+}
+
+.fa:hover {
+  color: #D5D5D5;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  .fa{
+    font-size:20px;
+    padding:10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-caption{
+    display: none;
+  }
+  #icon {
+    max-height: 150px;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+
+}
+
+/*Registration form css*/
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #21a2d4;
+  color: white;
+  padding: 20px 20px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+.review {
+  border: 3px solid #21a2d4;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.review hr{
+  border: 1px solid #21a2d4;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  padding: 20px 20px;
+  margin:auto;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+ background-color: #fefefe;
+ margin: 5px auto; /* 15% from the top and centered */
+ border: 1px solid #888;
+ width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+ /* Position it in the top right corner outside of the modal */
+ position: absolute;
+ right: 25px;
+ top: 0;
+ color: #000;
+ font-size: 35px;
+ font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+ color: red;
+ cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+ -webkit-animation: animatezoom 0.6s;
+ animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+ from {-webkit-transform: scale(0)}
+ to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+ from {transform: scale(0)}
+ to {transform: scale(1)}
+}

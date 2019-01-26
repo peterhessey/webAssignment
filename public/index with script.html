@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Javascript Test</title>
+  </head>
+
+
+
+  <body>
+    <p>Register account</p>
+
+    <form id="regForm" action="http://127.0.0.1:3000">
+      <div>Forename: <input id="fname"></input></div>
+      <div>Surname: <input id="sname"></input></div>
+      <div>Username: <input id="uname"></input></div>
+      <div>Password: <input id="pwd"></input></div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="result"></div>
+    <hr>
+
+    <form id="loginForm" action="http://127.0.0.1:3000">
+      <div>Username: <input id="unameLogin"></input></div>
+      <div>Password: <input id="pwdLogin"></input></div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div id="loginResult" onload="updateGreeting">Welcome, Guest</div>
+
+    <hr>
+
+    <div>Comment: <input id="commentInput"></input></div>
+    <button id="testBtn class="registrbtn"">Post Comment</button>
+
+    <div id="comments">
+      <h2>Comments</h2>
+      <br>
+    </div>
+
+  </body>
+</html>
