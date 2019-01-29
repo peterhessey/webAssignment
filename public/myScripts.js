@@ -3,13 +3,13 @@ function registerHandler (){
   $.ajax({
     url:"/people",
     type:"POST",
-    headers: {
+    data: JSON.stringify({
       "username": $('#unameReg').val(),
       "forename": $('#forenameReg').val(),
       "surname": $('#surnameReg').val(),
       "password": $('#passwordReg').val(),
       "access_token" : "concertina"
-    },
+    }),
     contentType:"application/json; charset=utf-8",
     dataType:"json",
     success: function(data){

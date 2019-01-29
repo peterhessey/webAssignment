@@ -67,10 +67,10 @@ app.post(
 );
 
 app.post('/people', function(req, resp){
-
-  if(req.headers["access_token"] === "concertina"){
-
-    var usernameRequested = req.headers["username"];
+  var data = req.body;
+  if(data["access_token"] === "concertina"){
+    console.log("Correct");
+    var usernameRequested = data["username"];
     var usernameAvailable = true;
     var i = 0;
 
@@ -81,10 +81,10 @@ app.post('/people', function(req, resp){
     }
 
     if(usernameAvailable){
-      var user = {"username":req.headers["username"], "forename":req.headers["forename"], "surname":req.headers["surname"], "password":req.headers["password"]};
+      var user = {"username":data["username"], "forename":data["forename"], "surname":data["surname"], "password":data["password"]};
       users.push(user);
       console.log("user added.");
-      const username = req.headers["username"];
+      const username = data["username"];
       resp.send(
         {"response" : "User with username " + username +" created!"}
       );
@@ -96,8 +96,6 @@ app.post('/people', function(req, resp){
     resp.status(403);
     resp.send("Invalid token.");
   }
-
-
 });
 
 app.get('/people', function(req,resp){
